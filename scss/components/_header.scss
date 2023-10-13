@@ -1,0 +1,22 @@
+header{
+    background-color: rgb(13, 0, 38);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px;
+    flex-wrap: wrap;
+    text-align: center;
+    img{
+        border: 1px solid black;
+    }
+    h1{
+        font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: rgb(159, 11, 45);
+    }
+    
+
+}

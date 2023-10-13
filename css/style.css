@@ -2,226 +2,401 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box
 }
 
-/*!---------------------tipografia------------------------------*/
+/**---------------------tipografia------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');/*!---------------------coloco la tipografia------------------------------*/
 
+/**---------------------fondo de pantalla  en el body------------------------------*/
+
 
 body{
+    background-image:url("../img/Fondodepantalla/pesca3.jpg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,
-
 }
 
-/*!---------------------titulos------------------------------*/
-h1{
-    color: rgb(191, 92, 67);/*!--titulo 1--*/
-}
-.titulosecundario{
-    padding: 10px;
-    color: rgb(0, 11, 6);/*!--titulo 2--*/
-    margin: 15px;
-}
-.tituloterciario{
-    color: rgb(55, 142, 100);/*!--titulo 3--*/
-    margin: 15px;
-}
-.subtitulo{
-    color: rgb(17, 76, 56);/*!--subtitulo--*/
-}
-/*!-----------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-/*!-------------contenedor de titulo y menu de la barra----------------*/
+/*!----------------------------------------------------------------------------------------*/
+/*?----------------------------------------------------------------------------------------*/
+/**-------------contenedor de titulo y menu de la barra----------------*/
 header{
-    background-color: rgb(2, 1, 4);
+    background-color: rgb(13, 0, 38);/*!-------------color de fondo del inicio----------------*/
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 15px;
-    display: flex;
+    padding: 1px;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
 }
 
-
-
-
-
-
-header h1{
+header h1{/*!-------------titulo principal ----------------*/
     font-size: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-}
-.header nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: rgb(198, 21, 21);
+    color: rgb(159, 11, 45);/*!-------------color del titulo----------------*/
+    
 }
 
 
-/*!------------------main primer seccion done  donde cptamos la imagen---------------------------------*/
+/*!------------------------------------*/
 
+
+/*?----------------sobre nosotros--------------------*/
 .sobrenosotros{
-    width:100% ;
-    height: 180vh;
     text-align: center;
-    background-image: url("../img/pesca3.jpg.jpg");/*!------------------imagen de fondo---------------------------------*/
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment:fixed ;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
-
-
-
-}
-.sobrenosotros p{ /*!-------------parrafo----------------*/
-    width: 80%;
-    margin: 50px;
-    color: rgb(155, 95, 77);
-    align-items: start;
-
-
-    margin-bottom:25px ;
-    
-    
-
-}
-.sobrenosotros a{/*!-------------boton de inscripsion----------------*/
-    text-decoration: none;
-    color: bisque;
-    background-color: black;
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid rgb(73, 73, 180);
-
-    
-
-
-}
-/*!-------------excursion----------------*/
-.excursion{
-
-    display: flex;
-    justify-content:space-around ;
-    flex-wrap: wrap;
     align-items: center;
-    color: wheat;
-    background-color: rgba(24, 88, 207, 0.279);
-}
-.excursion div{
-    width: 250;
-    height: 350;
-    border: 2 solid black;
-    margin: 10px;
-}
-.excursion div h2{
-    width: 50%;
-    height: 25px;
-    text-align: center;
-
-}
-.excursioncontenedor{
-    display: flex;
-    flex-wrap: wrap;
-}
-.excursioncontenedor p{
-    width: 50%;
-    height: 20px;
-}
-.excursion div img{/*!-------------imagen----------------*/
-    display: flex;
     flex-direction: column;
+    
 
-    margin: 25px;
-    display: flex;
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: start;
+}
+
+
+.sobrenosotros h2{
+    margin: 10px;
+    color: rgba(0, 205, 171, 0.848);
+    font-size: 40px;
+    font-weight:800 ;
     
 }
+.sobrenosotros p {
+    padding: 60px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(252, 254, 254);
 
-.excursion button{/*!-------------boton de inscripcion----------------*/
-    text-decoration: none;
-    color: rgb(171, 110, 35);
-    background-color: black;
-    margin: 15px;
+}
+.sobrenosotros div img{
+    background-color: aliceblue;
+    border: 2px solid black;
+    width: 350px;
+    height: 350px;
+    margin: 5px;
     padding: 5px;
+}
+.sobrenosotros a{
+    text-decoration: none;
+    color: rgb(183, 89, 6);
+    background-color: rgb(11, 11, 11);
     border-radius: 10px;
-    border: 1px solid rgb(51, 51, 139); 
+    border: 2px solid rgb(228, 218, 218);
+    padding: 10px;
+    
 }
-
-
-
-/*!-------------productos----------------*/
-
-.productos{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-.productos div{
+/*?----------------excursiones--------------------*/
+.excursiones{/**-----contenedor padre------*/
     width: 100%;
-    margin: 25px;
+    height: 100vh;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
 
+    
+    
 }
-.productoscontenedor div{
+.excursiones h2{
+    color: rgb(0,205,171,0.848);
+    background-color: rgb(81, 81, 82);
+    font-weight: 800;
+    padding: 10px;
+    margin: 10px;
+    
+    
+}
+/*!----*/
+.excursiones-contenedor{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: row;
+    width: 20px;
+
 
 }
 
+.excursion-imag {
+    border: 2px solid black;
+    background-color: aliceblue;
+    margin: 1px;
+    padding: 5px;
+    border: 2px solid black;
+    
+    
+    
+    
 
-.productos div img{/*!-------------imagen del producto----------------*/
-    width: 150px;
-    height: 150px;
-    border: 1PX solid black;
+}
+
+.excursion-imag h3{
+    color: rgb(21, 22, 21);
+    font-size:15px ;
+    
+}
+.excursion-imag img{
+    
+    margin: 5px;
+    border: 1px solid black;
+
+    
+}
+
+.excursion-imag p{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+.excursion-imag a{
+    text-decoration: none;
+    color: rgb(183, 89, 6);
+    background-color: rgb(11, 11, 11);
+    border-radius: 10px;
+    border: 2px solid rgb(228, 218, 218);
+    padding: 5px;
+}
+
+/*!--------------productos----------------------*/
+.productos{/**-----contenedor padre------*/
     text-align: center;
     margin: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+
+    
+    
+}
+.productos h2{
+    color: rgb(0,205,171,0.848);
+    background-color: rgb(81, 81, 82);
+    font-weight: 700;
+}
+/*!-----------------*/
+.productos-contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px;
+}
+.productos-imag {
+    background-color: rgba(240, 248, 255, 0.393);
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+    width: 180px;
+    
+    
+    
+    
+}
+
+.productos-imag h3{
+    color: rgb(30, 30, 30);
+    font-size: 15px;
+    
+}
+.productos-imag img{
+    
+    border: 1px solid black;
+}
+.productos-imag h4{
+    color: rgb(198, 101, 101);
 
 }
-.productos button{/*!-------------boton de compra----------------*/
+
+
+.productos-imag ul{
     text-decoration: none;
-    color: rgb(171, 110, 35);
-    background-color: black;
-    margin: 15px;
-    padding: 5px;
+    color: rgb(7, 7, 7);
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+}
+.productos-imag a{
+    text-decoration: none;
+    color: rgb(183, 89, 6);
+    background-color: rgb(11, 11, 11);
     border-radius: 10px;
-    border: 1px solid rgb(51, 51, 139);
+    border: 2px solid rgb(228, 218, 218);
+    padding: 5px;
 }
-/*!------------------footer pie de pagina---------------------------------*/
+/*?---------------ofertas---------------------*/
+.ofertas{/**-----contenedor padre------*/
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 100%px;
+    height: 80vh;
+}
+.ofertas h2{
+    color: rgb(0,205,171,0.848);
+    background-color: rgb(81, 81, 82);
+    font-weight: 800;
+    text-align: center;
 
-footer{
-    background-color: rgb(11, 154, 154);
+}
+/*!-----*/
+.ofertas-contenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+
+    
 }
 
-/*!---------------------------------------------------*/
+.ofertas-imag{
+    background-color: rgba(240, 248, 255, 0.393);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 5px;
+    padding: 10px;
+    width: 100%px;
+    text-align: center;
+    
+
+}
+
+.ofertas-imag h3{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+
+}
+.ofertas-imag img{
+    border: 1px solid black;
+}
+.ofertas-imag h4{
+    color: rgb(198, 101, 101);
+}
+.ofertas-imag ul {
+    color: rgb(25, 24, 24);
+    font-weight: 600;
+    text-decoration: none;
+    list-style:none ;
+}
+
+
+.ofertas-imag a{
+    text-decoration: none;
+    color: rgb(183, 89, 6);
+    background-color: rgb(11, 11, 11);
+    border-radius: 10px;
+    border: 2px solid rgb(228, 218, 218);
+    padding: 3px;
+    
+}
+/*?------------contacto------------------------*/
+.contacto{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+
+}
+.contacto-contenedor{
+    border: 2px solid rgb(0, 0, 0);
+    color: blue;
+    width: 450px;
+    background-color: rgba(68, 67, 67, 0.665);
+
+
+}
 
 
 
+/*?------------footer pie de pagina footer------------------------*/
+.pie{/**-----contenedor padre------*/
+    text-align: center;
+    background-color: rgb(28, 0, 54);
+    
+}
+.pie h4{
+    color: rgb(157, 3, 18);
+    font-weight: 800;
+    background-color: rgb(81, 81, 82);
+    
+}
+.cont-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(108, 106, 109, 0);
+}
 
-/*!---------------------------------------------------*/
+.cont-footer img{
+    border: 1px solid black;
+}
+
+.cont-footer a{
+    text-decoration: none;
+    color: rgb(16, 16, 16);
+    background-color: rgb(200, 0, 0);
+    border-radius: 10px;
+    border: 2px solid rgb(228, 218, 218);
+    padding: 5px;
+    margin: 5px;
+    
+    
+}
+.cont-footer div a{
+    text-decoration: none;
+    color: rgb(16, 16, 16);
+    background-color: rgb(140, 188, 51);
+    border-radius: 10px;
+    border: 2px solid rgb(228, 218, 218);
+    padding: 5px;
+    margin: 5px;
+    ;
+
+}
 
 
+
+/*?---------------media query--------------------*/
+/*?------------contenedor main ------------------------*/
+@media only screen and (min-width: 350px) and (max-width: 768px){
+    heder{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .sobrenosotros{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .excurciones{
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .excursion-contenedor{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .excurcion-img{
+        grid-column: span 2;
+    }
+}

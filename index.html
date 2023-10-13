@@ -3,264 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../carpeta 2 coder/css/style.css">
     <title></title>
+    
 </head>
-<body>
-  <header><!--!-----------------------------titulo------------------------------------------>>
-    <img src="./img/logo1.jpg"claas="logo"style="width: 100px; height: 100px;" alt=""><!--aca va una imagen logo-img src=""style="width: 150px; height: 150;" alt=-->
-    <h1>El Gran Salmon</h1><!--titulo 1-->
-      <nav><!--barra de navegacion-->
-        <ul><!--aca  va una lista desordenada -->
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/sobrenosotro.html">Sobre Nosotros</a></li>
-          <li><a href="./pages/escursiones.html">Escursiones</a></li>
-          <li><a href="./pages/productos.html">Productos</a></li>
-          <li><a href="./pages/contactos.html">Contactos</a></li>
-        </ul>
-      </nav>
-  </header>
+<body><!--!-----------------------------body rama main visible------------------------------------------>
+	<!--!-----------------------------barra de accion------------------------------------------>
+    <header><!---->
+        <img src="../carpeta 2 coder/img/LogoPesca/logo1.jpg"claas="logo"style="width: 100px; height: 100px;" alt=""><!--aca va una imagen logo-img src=""style="width: 150px; height: 150;" alt=--><!---->
+        <h1>EL GRAN SALMON</h1><!---->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong></strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html"><strong>Inicio</strong></a><!---->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobrenosotro.html"><strong>Sobre Nosotros</strong></a><!---->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/excursiones.html"><strong>Excursiones</strong></a><!---->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button"    data-bs-toggle="dropdown"     aria-expanded="false">
+                            <strong>Productos</strong><!---->
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/productos.html">Productos</a></li><!---->
+                                <li><a class="dropdown-item" href="./pages/ofertas.html">Oferta</a></li><!---->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/contactos.html"><strong>Contactos</strong></a><!---->
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+    </header>
     <main>
-        <section class="sobrenosotros"><!--!-----------------------------sobre nosotros------------------------------------------>>
-          <div><!--aca va una imagen de fondo-->
-            <h2 class="titulosecundario">Sobre Nosotros </h2><!--titulo 2-->
-                <p><strong> Somos una empresa familiar que nos dedicamos a las excursiones,torneos de pescar,las mismas son enbarcado o costeras.
-                Brindamos un excelente pasar a nuestros clientes, para que se cientan como en su casa..
+    <!--!*?------------------------------------------------------------------------------------------->
+        <!--!*-----------------------------sobre nosotros------------------------------------------>
+        <section class="sobrenosotros"><!---->
+                <h2>Sobre Nosotros </h2><!--titulo -->
+                <p>Somos una empresa familiar que nos dedicamos a las excursiones y torneos de pesca, las mismas son embarcados o costeras.
+                Brindamos un excelente pasar a nuestros clientes, para que se sientan como en su casa.
+                Nuestros clientes tienen grandes descuentos en Excursiones y Equipamientos de pescas.
                 Las excursiones son todo el año.
-                Nuestros clientes tienen grandes descuentos en excursiones y equipamientos de pescas.
                 No te quedes afuera de esta Gran comunidad ….
-                TE esperamos ...</strong></p>
-                  <a href="./pages/contactos.html">Crear Usuario</a>
-            </div>
-          </section>
-          <!--!-----------------------------excursiones------------------------------------------>>
-          <section class="excursion">
-            <h2 class="titulosecundario">Excursiones</h2><!--titulo 2.1-->
-          <div class="excursioncontenedor">
-            <h3 class="tituloterciario">Pesca Del Dorado </h3>  <!--subtitulo 1--> 
-            <div>
-              <img src="./img/dorado.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-              <p>durante el feriado del 17 de Agosto tiene lugar la Fiesta Nacional del Dorado en Paso de la Patria, Corrientes.
-              la mejor época para pescar dorado suele ser en los meses de primavera y verano, que van desde septiembre hasta marzo. Durante estos meses, el agua se encuentra en una temperatura adecuada para el dorado y las condiciones climáticas son ideales para la pesca. Sin embargo, es importante tener en cuenta que el dorado puede ser pescado en todas las estaciones del año, y que su mejor momento para pescar dependerá de las condiciones específicas de cada río o arroyo.</p>
-              <button>Inscripción</button><!--aca  va un boton de inscripcion-->
-            </div>
-            <div>
-              <h3 class="tituloterciario">Pesca Del Pacu</h3><!--subtitulo 1.1-->
-              <img src="./img/pacu.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-              <p>En Argentina, los lugares más populares para pescar pacú son el río Paraná, el río Uruguay, el río Bermejo y el río Pilcomayo. También se pueden encontrar en algunas lagunas y embalses.
-                La Fiesta Nacional del Pacú es una emblemática festividad que se realiza anualmente en la ciudad de Esquina, Corrientes. El evento principal es una competencia de pesca deportiva embarcada sobre las aguas del Rio Paraná y del Rio Corrientes, que tiene como especie exclusiva al Pacú, pez de alto valor deportivo. En la fecha del mes de febrero
-                El pacú se puede pescar durante todo el año, pero hay épocas en las que es más activo y más fácil de capturar. La mejor temporada para pescar pacú en Argentina es de noviembre a marzo, cuando la temperatura del agua es cálida y los frutos y semillas están más disponibles para ellos.</p>
-              <button>Inscripción</button><!--aca  va un boton de inscripcion-->
-            </div> 
-            <div>
-              <h3 class="tituloterciario">Pesca del Surubi</h3><!--subtitulo 1.2-->
-              <img src="./img/surubi.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-              <p>En su visita y recorrida por la ciudad de Goya, el ex Presidente Mauricio Macri invitó a participar y vivir la 46° Fiesta Nacional del Surubí que se desarrollará del 24 al 30 de abril 2023 en la segunda ciudad de la provincia de Corrientes.
-                Del 16 de Marzo al 14 de Agosto pescadores de todo el país llegan a la ciudad para buscar al Gran Pez. Estamos en la mejor época para salir a buscar a esta combativa especie: el surubí.</p>
-                <button>Inscripción</button><!--aca  va un boton de inscripcion-->
-            </div>
-            <div>
-              <h3 class="tituloterciario">Pesca De La Corvina</h3><!--subtitulo 1.3-->
-              <img src="./img/corvina.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-              <p>La temporada de pesca en aguas salvajes arranca a finales del verano, siendo septiembre y octubre los meses habitualmente más apreciados por los profesionales para sacarle partido en fresco.
-                Mar de Ajó se prepara para la 53ª Fiesta de la Corvina Rubia y Promoción Turística, donde se podrá disfrutar de espectáculos, patio de comidas, desfile institucional, concurso de pesca y una variedad de actividades para disfrutar en familia.
-                  
-                El evento que cada año convoca a vecinos de todo el Partido de La Costa también espera recibir una importante cantidad de visitantes ya que se desarrollará durante este fin de semana largo con la apertura el viernes 18 y el gran cierre el lunes 21 de noviembre con la presentación de la consagrada banda Turf.</p>
-              <button>Inscripción</button><!--aca  va un boton de inscripcion-->
-            </div>
-            <div>
-              <h3 class="tituloterciario">Pesca Variada</h3><!--subtitulo 1.4-->
-              <img src="./img/variada.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-              <p>La pesca variada es todo el año…</p>
-              <button>Inscripción</button><!--aca  va un boton de inscripcion-->
-            </div>
-            <div>
-              <h3 class="tituloterciario">Pesca Del Pejerrey</h3><!--subtitulo 1.5-->
-              <img src="./img/pejerrey ç.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-              <p>Los meses de pesca varían de mayo a fines de agosto, siendo junio y julio los meses de mayor actividad.</p>
-              <button>Inscripción</button><!--aca  va un boton de inscripcion-->
-            </div>
-          </div>
+                TE ESPERAMOS!</p><!--parrafo-->
+                <div>
+                    <img src="./img/imag-sobrenosotros/pescadores(1).jpg" alt="">
+                    <img src="./img/imag-sobrenosotros/pescadore(2).jpg" alt="">
+                    <img src="./img/imag-sobrenosotros/pescadores(3).jpeg" alt="">
+                </div>
+                <a href="./pages/contactos.html">Crear Usuario</a><!---->
+            
         </section>
-            <!--!-----------------------------productos------------------------------------------>>
+    
+        <!--!*?------------------------------------------------------------------------------------------->
+        <!--!*-----------------------------excursiones  ------------------------------------------>
+    
+        <section class="excursiones"><!--caja de excursiones-->
+            <h2 >Excursiones</h2><!--titulo -->
+            <div class="excursion-contenedor">
+                <div class="excursion-imag">    <!--!----------grid------>
+                    <h3>Pesca Del Dorado </h3>  <!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Peces/dorado.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <p></p>
+                    <a href="./pages/excursiones.html">Inscripción</a><!---->
+                </div> 
+                    <!------------------------------------------------------------------------->
+                <div class="excursion-imag"><!--!----------grid------>
+                    <h3>Pesca Del Pacu</h3><!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Peces/pacu.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <p></p>
+                    <a href="./pages/excursiones.html">Inscripción</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="excursion-imag"><!--!----------grid------>
+                    <h3>Pesca del Surubi</h3><!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Peces/surubi.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <p></p>
+                    <a href="./pages/excursiones.html">Inscripción</a><!---->
+                </div>
+                <div class="excursion-imag"><!--!----------grid------>
+                    <h3>Pesca De La Corvina</h3><!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Peces/corvina.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <p></p>
+                    <a href="./pages/excursiones.html">Inscripción</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="excursion-imag"><!--!----------grid------>
+                    <h3>Pesca Variada</h3><!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Peces/variada.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <p></p>
+                    <a href="./pages/excursiones.html">Inscripción</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="excursion-imag"><!--!----------grid------>
+                    <h3>Pesca Del Pejerrey</h3><!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Peces/pejerrey ç.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <p></p>
+                    <a href="./pages/excursiones.html">Inscripción</a><!---->
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------->
+        <!--!*?------------------------------------------------------------------------------------------->
+            <!--!*-----------------------------productos------------------------------------------>
+    
         <section class="productos">
-          <h2 class="titulosecundario">productos</h2><!--titulo 2.2-->
-          <div class="productocontenedor">
-            <div>
-              <h3 class="tituloterciario">CAÑA DE PESCAR </h3><!--subtitulo 1.6-->
-                <!--img src=""style="width: 150px; height: 150;" alt=""-->
-              <img src="./img/caña2.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-              <h4 class="subtitulo">Caracteristicas</h4>
-                <lu><!--aca  va una lista desordenada del producto-->
-                  <li>Medida:1.80m en 2 tramos</li>
-                  <li>Tipo de reel utilizable: frontal</li>
-                  <li>Composición:fibra de vidrio</li>
-                  <li>4 pasahilos de cerámica de 2 patas</li>
-                  <li>Porta reel de grafito</li>
-                  <li>Gancho porta anzuelo</li>
-                  <li>Empuñadura recortada de goma eva</li>
-                  <li>Incluye funda de curo</li>
-                  <li>Resistencia: 60 kg</li>
-                </lu>
-                  
-                  <a href=""></a>
-                <button>Comprar</button><!--aca  va un boton de compra-->
+            <h2>Productos</h2><!--titulo -->
+            <div class="productos-contenedor">
+                <div class="productos-imag"><!--!----------grid------>
+                    <h3>CAÑA DE PESCAR </h3><!--subtitulo -->
+                    <!--img src=""style="width: 150px; height: 150;" alt=""-->
+                    <img src="../carpeta 2 coder/img/Productos/caña2.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <h4>Caracteristicas</h4><!---->
+                    <ul></ul>
+                    <a href="./pages/productos.html">Comprar</a><!---->
+                </div>
+                        <!------------------------------------------------------------------------->
+                <div class="productos-imag"><!--!----------grid------>
+                    <h3>CAÑA PARA ENBARCADO</h3><!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Productos/caña de pescar.jpg"claas="logo"style="width: 150px; height: 150px;" alt="Caña para pescar enbarcado"><!---->
+                    <h4>Caracteristicas</h4>
+                    <ul></ul>
+                    <a href="./pages/productos.html">Comprar</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="productos-imag"><!--!----------grid------>
+                    <h3>REELPARA PEJERREY</h3><!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Productos/reel.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <h4>Descripción:</h4><!---->
+                    <ul></ul>
+                    <a href="./pages/productos.html">Comprar</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="productos-imag"><!--!----------grid------>
+                    <h3>REEL VARIADO</h3><!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Productos/reel2.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <h4>Descripción:</h4><!---->
+                    <ul></ul>
+                    <a href="./pages/productos.html">Comprar</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="productos-imag"><!--!----------grid------>
+                    <h3>REEL VARIADA ROTATIVO</h3><!--subtitulo con la class nombramos el sector -->
+                    <img src="../carpeta 2 coder/img/Productos/rell3.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">  <!---->
+                    <h4>descripcion:</h4><!---->
+                    <ul></ul>
+                    <a href="./pages/productos.html">Comprar</a><!---->
+                </div>
             </div>
-                
-            <div>
-            <h3 class="tituloterciario">CAÑA DE PESCA PARA ENBARCADO</h3><!--subtitulo 1.7-->
-            <img src="./img/caña de pescar.jpg"claas="logo"style="width: 150px; height: 150px;" alt="Caña para pescar enbarcado">
-              <lu><!--aca  va una lista desordenada del producto-->
-                <li>Caña de baitcast.</li>
-                <li>2 tramos.</li>
-                <li>5pasailos apto para multi y monofilamento.</li>
-                <li>porta reel a rosca con gatillo.</li>
-                <li>Empuñadura recortada de goma eva</li>
-                <li>tamaño de la caña: 2 mts</li>
-                <li>Funda de tela</li>
-                <li>Resistencia: 55kg</li>
-              </lu>
-                <a href=""></a>
-                <button>Comprar</button><!--aca  va un boton de compra-->
+        </section>
+    
+        <!--!*?------------------------------------------------------------------------------------------->
+        <!--!*----------------------------------------------------------------------->
+        <!--!*-----------------------------ofertas------------------------------------------>
+    
+        <section class="ofertas"><!---->
+            <h2>Ofertas</h2><!---->
+            <div class="ofertas-contenedor">
+                <div class="ofertas-imag"><!--!----------grid------>
+                    <h3>KIT SEÑUELOS</h3><!--subtitulo 1.10-->
+                    <img src="../carpeta 2 coder/img/Ofertas/kit señuelos.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <h4>Descripciòn</h4><!---->
+                    <ul></ul>
+                    <a href="./pages/ofertas.html">Comprar</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="ofertas-imag"><!--!----------grid------>
+                    <h3>KIT SEÑUELOS 5/u</h3><!--subtitulo 1.11-->
+                    <img src="../carpeta 2 coder/img/Ofertas/señuelos1.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <h4>Descripción</h4><!---->
+                    <ul></ul>
+                    <a href="./pages/ofertas.html">Comprar</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="ofertas-imag"><!--!----------grid------>
+                    <h3>LINEA VARIADA</h3><!--subtitulo 1.12-->
+                    <img src="../carpeta 2 coder/img/Ofertas/LINEAS DE PESCA.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <h4>Descripciòn</h4><!---->
+                    <ul></ul>
+                    <a href="./pages/ofertas.html">Comprar</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="ofertas-imag"><!--!----------grid------>
+                    <h3>Kit DE PESCA</h3><!--subtitulo 1.13-->
+                    <img src="../carpeta 2 coder/img/Ofertas/combo.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <h4>Descripciòn:</h4><!---->
+                    <ul></ul>
+                    <a href="./pages/ofertas.html">Comprar</a><!---->
+                </div>
+                    <!------------------------------------------------------------------------->
+                <div class="ofertas-imag"><!--!----------grid------>
+                    <h3>KIT VARIADA </h3><!--subtitulo -->
+                    <img src="../carpeta 2 coder/img/Ofertas/combo2.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!---->
+                    <h4>Descripción</h4><!---->
+                    <ul></ul>
+                    <a href="./pages/ofertas.html">Comprar</a><!---->
+                </div>
             </div>
-              
-            <div>
-            <h3 class="tituloterciario">REELPARA PEJERREY</h3><!--subtitulo 1.8-->
-            <img src="./img/reel.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-            <h4 class="subtitulo">Descripción:</h4>
-              <ul><!--aca  va una lista desordenada del producto-->
-                <li>3 ulemanes.</li>
-                <li>Cuerpo y carretel de grafito</li>
-                <li>Manija plegable e intercambiable.</li>
-                <li>capacidad del nylon:0.25-115/0.30-100 mm/m</li>
-              </ul>
-              <a href=""></a>
-              <button>Comprar</button><!--aca  va un boton de compra-->
-            </div>
-              
-            <div>
-            <h3 class="tituloterciario">REEL VARIADO</h3><!--subtitulo 1.8-->
-            <img src="./img/reel2.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-            <h4 class="subtitulo">Descripción:</h4>
-              <ul><!--aca  va una lista desordenada del producto-->
-                <li>Cuerpo de grafito.</li>
-                <li>Carretel de grafito adicional.</li>
-                <li>Freno delantero.</li>
-                <li>Manivela reversible.</li>
-                <li>Rotor simetrico para minimizar la vibreción.</li>
-                <li>Capacidad del nylon:0.45/195-0.60/110 mm/m</li>
-              </ul>
-              <a href=""></a>
-              <button>Comprar</button><!--aca  va un boton de compra-->
-            </div>
-              
-            <div>
-            <h3 class="tituloterciario">REEL VARIADA ROTATIVO</h3><!--subtitulo 1.9-con la class nombramos el sector -->
-            <img src="./img/rell3.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">  
-            <h4 class="subtitulo">descripcion:</h4>
-              <ul><!--aca  va una lista desordenada del producto-->
-                <li>Apto para multifilamento</li>
-                <li>Idel pesca variada</li>
-                <li>3 rulemanes</li>
-                <li>Freno progresivo y Magnético</li>
-                <li>Maniveka goma antideslizante</li>
-                <li>tipo de nylon: 0.23/180-0.25/200-0.30/120 mm/m</li>
-              </ul>
-                <button>Comprar</button><!--aca  va un boton de compra-->
-                <a href=""></a>
-
-            </div>
-              
-            <div>
-            <h3 class="tituloterciario">KIT SEÑUELOS</h3><!--subtitulo 1.10-->
-            <img src="./img/kit señuelos.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-            <h4 class="subtitulo">Descripciòn</h4>
-              <ul><!--aca  va una lista desordenada del producto-->
-                <li>Señuelos pesca variada</li>
-                <li>15 Señuelos</li>
-              </ul>
-              <a href=""></a>
-              <button>Comprar</button><!--aca  va un boton de compra-->
-            </div>
-              
-            <div>
-            <h3 class="tituloterciario">KIT SEÑUELOS VARIADAS</h3><!--subtitulo 1.11-->
-            <img src="./img/señuelos1.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-            <h4 class="subtitulo">Descripción</h4>
-              <ul><!--aca  va una lista desordenada del producto-->
-                <li>Señuelos pesca variada</li>
-                <li>5 señuelos</li>
-              </ul>
-                <a href=""></a>
-                <button>Comprar</button><!--aca  va un boton de compra-->
-            </div>
-              
-
-            <div>
-            <h3 class="tituloterciario">LINEA DE PESCA VARIADA</h3><!--subtitulo 1.12-->
-            <img src="./img/LINEAS DE PESCA.JPG"claas="logo"style="width: 150px; height: 150px;" alt="">
-            <h4 class="subtitulo">Descripciòn</h4>
-              <ul><!--aca  va una lista desordenada del producto-->
-                <li>nylon de 0.50</li>
-                <li>2 Anzuelo para variada</li>
-                <li>1 Mosqueton </li>
-                <li>2 Rotores</li>
-                <li>4 Bolillas</li>
-              </ul>
-                <a href=""></a>
-                <button>Comprar</button><!--aca  va un boton de compra-->
-            </div>
-                
-
-            <div>
-            <h3 class="tituloterciario">COMBO DE PESCA</h3><!--subtitulo 1.13-->
-            <img src="./img/combo.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-            <h4 class="subtitulo">Descripciòn:</h4>
-              <ul>
-                              <!--aca  va una lista desordenada del producto-->
-                <li>Caña telescopica 2 mts</li>
-                <li>Reel Fontal</li>
-                <li>Estuche</li>
-                <li>kit de señuelos</li>
-                <li>Carretel de nylon</li>
-                <li>kit Anzuelos</li>
-                <li>kit bollas</li>
-                <li>kit plomadas</li>
-              </ul>
-              <button>Comprar</button><!--aca  va un boton de compra-->
-            </div>
-                
-
-            <div>
-            <h3 class="tituloterciario">COMBO KIT VARIADA </h3><!--subtitulo 1.14-->
-            <img src="./img/combo2.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-            <h4 class="subtitulo">Descripción</h4>
-              <ul><!--aca  va una lista desordenada del producto-->
-                <li>Caña telescopica 1.80 mts</li>
-                <li>Reel Fontal</li>
-                <li>Estuche</li>
-                <li>kit de señuelos</li>
-                <li>Carretel de nylon</li>
-                <li>kit Anzuelos</li>
-                <li>kit bollas</li>
-                <li>kit Plomadas</li>
-              </ul>
-                  <a href=""></a>
-                  <button>Comprar</button><!--aca  va un boton de compra-->  
-            </div>
-          </div>
         </section>
     </main>
-    <footer><!--!--------------------------------pie de pagina---------------------------------------------->>
-        <h4 class="subtitulo">Contacto</h4>
-        <img src="./img/logo1.jpg"claas="logo"style="width: 150px; height: 150px;" alt="">
-        <h4 class="subtitulo">El Gran Salmon</h4>
-        <div>
-            <a href="https://www.facebook.com/"target="_blank"><img src="./img/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/"target="_blank"><img src="./img/instagram (1).png" alt=""></a>
-            <a href="https://wa.me/+541164955310"target="_blank"><img src="./img/whatsapp (1).png" alt=""></a>
-
-        </div>
-    </footer>
+    <!--!*?------------------------------------------------------------------------------------------->
+	<!--!*--------------------------------pie de pagina---------------------------------------------->
+        <footer class="pie">
+            <h4>EL GRAN SALMON</h4><!--titulo del sitio web-->
+            <div class="cont-footer">
+                <img src="./img/LogoPesca/logo1.jpg"claas="logo"style="width: 150px; height: 150px;" alt=""><!--imagen de logo-->
+                <a href="./pages/contactos.html">contacto</a><!---->
+                <!--!*----------------------------------------------------------------------->
+                <div>
+                    <a href="https://www.facebook.com/"target="_blank"><img src="../carpeta 2 coder/img/LogoddeRedes/facebook.png" alt=""></a><!--imagen de red social-->
+                    <a href="https://www.instagram.com/"target="_blank"><img src="../carpeta 2 coder/img/LogoddeRedes/instagram (1).png" alt=""></a><!--imagen de red social-->
+                    <a href="https://wa.me/+541164955310"target="_blank"><img src="../carpeta 2 coder/img/LogoddeRedes/whatsapp (1).png" alt=""></a><!--imagen de red social-->
+                </div>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><!---->
 </body>
 </html>
