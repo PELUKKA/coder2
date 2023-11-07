@@ -4,3 +4,12 @@
     box-sizing: border-box
 }
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.545),rgba(0, 0, 0, 0.545)),url("../img/Fondodepantalla/pesca3.jpg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,
+}

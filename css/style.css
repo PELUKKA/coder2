@@ -373,30 +373,17 @@ header h1{/*!-------------titulo principal ----------------*/
 
 /*?---------------media query--------------------*/
 /*?------------contenedor main ------------------------*/
-@media only screen and (min-width: 350px) and (max-width: 768px){
-    heder{
+@media  screen and (min-width: 750px){
+    pi,contact,ofertasproducto,excursiones,sobrenosotros{
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
     }
 }
-@media only screen and (min-width: 481px) and (max-width: 768px){
-    .sobrenosotros{
+@media  screen and (min-width: 450px){
+    pi,contact,ofertasproducto,excursiones,sobrenosotros{
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
-    }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px){
-    .excurciones{
-        grid-template-columns: repeat(2,1fr);
-        grid-auto-rows: 200px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .excursion-contenedor{
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    .excurcion-img{
-        grid-column: span 2;
     }
 }
