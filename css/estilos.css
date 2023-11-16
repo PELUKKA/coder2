@@ -62,12 +62,12 @@ header {
   height: 450vh;
   margin: 10px;
   padding: 10px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center; }
   .excursiones h2 {
-    color: rgba(57, 200, 176, 0.848);
+    color: rgba(0, 205, 171, 0.848);
     font-weight: 800;
     padding: 20px;
     margin: 10px;
@@ -112,7 +112,7 @@ header {
         padding: 20px; }
 
 .productos h2 {
-  color: rgba(24, 186, 159, 0.848);
+  color: rgba(0, 205, 171, 0.848);
   font-weight: 700;
   text-align: center; }
 
@@ -129,7 +129,7 @@ header {
     width: 25%;
     text-align: center; }
     .productos .productos-contenedor .productos-imag h3 {
-      color: #1e1e1e;
+      color: black;
       font-size: 15px; }
     .productos .productos-contenedor .productos-imag img {
       border: 1px solid black; }
@@ -150,7 +150,7 @@ header {
       padding: 5px; }
 
 .ofertas h2 {
-  color: rgba(11, 157, 133, 0.848);
+  color: rgba(0, 205, 171, 0.848);
   font-weight: 800;
   text-align: center; }
 
@@ -238,6 +238,13 @@ header {
     list-style: none; }
 
 @media (min-width: 350px) and (max-width: 700px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 150px 200px 200px;
+    grid-template-areas: "sobrenosotros sobrenosotros sobrenosotros" "excursiones excursiones excursiones" "productos-contenedor productos-contenedor productos-contenedor" "ofertas ofertas ofertas"; } }
+
+@media (min-width: 350px) and (max-width: 700px) {
   .sobrenosotros {
     display: flex;
     background-color: #7300ff;
@@ -260,7 +267,7 @@ header {
     flex-direction: column; } }
 
 @media (min-width: 350px) and (max-width: 700px) {
-  .productos-contenedor {
+  .proproductos {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

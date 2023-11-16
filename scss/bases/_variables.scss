@@ -1,21 +1,16 @@
-$color-1: rgb(159, 11, 45);
-$color-2:rgba(0, 205, 171, 0.848);
-$color-3: rgb(0, 0,0);
-$color-4: rgb(198, 101, 101);
-$color-5: rgba(240, 248, 255, 0.393);
-$color-6: rgb(0, 0, 0);
-$color-7: rgb(255, 255, 255);
-$color-8: rgb(255, 255, 255);
-$color-9:  rgb(13, 0, 38);
-$color-10: rgb(13, 0, 38);
-$color-11: rgb(255, 255, 255);
-$color-12: rgb(255, 255, 255);
-$font-size:12px,18px,20px;
-@mixin flex($flex,$direction,$justify,$aling){
+$color-titulH1:rgb(159, 11, 45);
+$color-tituloH2:rgba(0, 205, 171, 0.848);
+$color-subtituloH3:rgb(0, 0, 0);
+$color-subtituloH4:rgb(198, 101, 101);
+$font-size:
+12px,
+18px,
+20px,
+40px;
+@mixin flex($flex,$direction,$justify){
     display: $flex;
     flex-direction:$direction;
     justify-content:$justify;
-    align-items: $aling;
 }
 
 

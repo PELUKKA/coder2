@@ -1,4 +1,17 @@
+@media (min-width:350px) and (max-width:700px){
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:100px 150px 200px 200px;
+        grid-template-areas: 
+        "sobrenosotros sobrenosotros sobrenosotros"
+        "excursiones excursiones excursiones"
+        "productos-contenedor productos-contenedor productos-contenedor"
+        "ofertas ofertas ofertas"
 
+        ;
+    }
+}
 @media (min-width:350px) and (max-width:700px){
     .sobrenosotros{
         display: flex;
@@ -31,7 +44,7 @@
 @media (min-width:350px) and (max-width:700px){
     
 
-        .productos-contenedor{
+        .proproductos{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
